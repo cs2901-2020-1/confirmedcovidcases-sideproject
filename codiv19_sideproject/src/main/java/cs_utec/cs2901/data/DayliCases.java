@@ -1,11 +1,14 @@
-package cs_utec.cs2901;
+package cs_utec.cs2901.data;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
-public class DailyCases implements Serializable {
+@Entity
+public class DayliCases implements Serializable {
+
     @Id
     private long id;
 
@@ -15,10 +18,10 @@ public class DailyCases implements Serializable {
     @Column
     private Date fecha;
 
-    public DailyCases() {
+    public DayliCases() {
     }
 
-    public DailyCases(Long id, Integer cantidad, Date fecha) {
+    public DayliCases(Long id, Integer cantidad, Date fecha) {
         this.id = id;
         this.cantidad = cantidad;
         this.fecha = fecha;
