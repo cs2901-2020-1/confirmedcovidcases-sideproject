@@ -32,3 +32,5 @@
 *.app
 
 codiv19_sideproject/target
+*.idea
+*.iml
